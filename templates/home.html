@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flight fare prediction</title>
+	<style type ="text/css" >
+   .footer{
+       position: fixed;
+       text-align: center;
+       bottom: 25px;
+       width: 100%;
+       font-weight: bold;
+   	}
+	</style>
+	</head>
+	<body>
+	
+		<center>
+		<h1> Welcome to flight fare Prediction website</h1>
+		<br>
+			<br>
+		<form action="/predict" method="POST">
+			<label for="dep_time">Choose a Depature time:</label>
+			<input type="datetime-local" name="dep_time" id="dep_time" required="required">
+			<br>
+			<br>
+			<label for="arrival_time">Choose an Arrival Time:</label>
+			<input type="datetime-local" name="arrival_time" id="arrival_time" required="required">
+			<br>
+			<br>
+			<label for="Total_Stops">Choose no. of Stop:</label>
+				<select name="Total_Stops" id="Total_Stops" required="required">
+					<option value="0">Non-stop</option>
+					<option value="1">1 stop </option>
+					<option value="2">2 stop</option>
+					<option value="3">3 stop</option>
+					<option value="4">4 stop</option>
+				</select>
+				<br>
+				<br>
+			<label for="airline">Choose a Airline:</label>
+			  <select name="airline" id="airline" required="required">
+					<option value="Air Asia">Air Asia</option>
+					<option value="Air_India">Air India</option>
+					<option value="GoAir">GoAir</option>
+					<option value="IndiGo">IndiGo</option>
+					<option value="Jet_Airways">Jet Airways</option>
+					<option value="Jet_Airways_Business">Jet Airways Business</option>
+					<option value="Multiple_carriers">Multiple carriers</option>
+					<option value="Multiple_carriers_Premium_economy">Multiple carriers Premium economy</option>
+					<option value="SpiceJet">SpiceJet</option>
+					<option value="Trujet">Trujet</option>
+					<option value="Vistara">Vistara</option>
+					<option value="Vistara_Premium_economy">Vistara Premium economy</option> 			
+			  </select>
+			  <br>
+			  <br>
+			 <label for="Source">Choose a Source:</label>
+				<select name="Source" id="Source" required="required">				
+					<option value="Banglore">Banglore</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Kolkata">Kolkata</option>
+					<option value="Mumbai">Mumbai</option>
+			  </select>
+			  <br>
+			  <br>
+			 <label for="Destination">Choose a Destination:</label>
+				<select name="Destination" id="Destination" required="required">
+					<option value="Banglore">Banglore</option>
+					<option value="Cochin">Cochin</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Hyderabad">Hyderabad</option>
+					<option value="Kolkata">Kolkata</option>
+				</select>
+				<br>
+				<br>
+			<input type="submit" value="Search">
+			<br>
+				<br>
+		</form>
+		<br>
+        <br>
+        <h3>{{ prediction_text  }}</h3>
+
+
+        <br>
+        <br>
+		<div class="footer">© Copyright 2021, Arun Mozhi Devan</div>
+		</center>
+	</body>
+</html>
+
