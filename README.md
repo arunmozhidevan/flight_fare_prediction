@@ -73,9 +73,9 @@ Login or signup in order to create virtual app. You can either connect your gith
 You also use this [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
 
 ## Website
-<img target="_blank" src="https://64.media.tumblr.com/b37c3fcbcc84e42ffde72b8cf5e01582/96a852089646e9d8-13/s540x810/27346237b147e11b3cda57c0a8a2ff0673e0cab5.png">
+<img target="_blank" src="https://64.media.tumblr.com/b37c3fcbcc84e42ffde72b8cf5e01582/96a852089646e9d8-13/s540x810/27346237b147e11b3cda57c0a8a2ff0673e0cab5.png" width=1080>
 
-<img target="_blank" src="https://64.media.tumblr.com/50d951a212066cc6ab6020b5435fbfc7/96a852089646e9d8-81/s540x810/4e2baff90f9a9bc2bc8884fb6bbb12d79d004201.png">
+<img target="_blank" src="https://64.media.tumblr.com/50d951a212066cc6ab6020b5435fbfc7/96a852089646e9d8-81/s540x810/4e2baff90f9a9bc2bc8884fb6bbb12d79d004201.png" width=1080>
 
 ## Technologies Used
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" height=50>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" height=50>](https://gunicorn.org) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" height=50>](https://scikit-learn.org/stable/)
