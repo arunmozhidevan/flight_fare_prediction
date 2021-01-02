@@ -32,13 +32,13 @@ pip install -r requirements.txt
 <img target="_blank" src="https://64.media.tumblr.com/b2bc203943b82b1ef9da2223548a7439/3621f30b68b85d4e-cd/s1280x1920/159aec8ed666c14db120e6dbd5ebd1f704dfc2ad.png">
 
 5. Feature extraction: calculating duration from arrival_time and dep_time
-<img target="_blank" src="https://64.media.tumblr.com/e72708d7e537fb1839691174c16a21a7/e134c79da8b817d9-ce/s1280x1920/4f7101283fd1507eefe55446e069e17c90696a1c.png>
+<img target="_blank" src="https://64.media.tumblr.com/e72708d7e537fb1839691174c16a21a7/e134c79da8b817d9-ce/s1280x1920/4f7101283fd1507eefe55446e069e17c90696a1c.png">
 
 5. Handling Categorical Data: performing one hot encoding on the nominal data (Airline, Source, Destination)
-<img target="_blank" src="https://64.media.tumblr.com/5ab5dfb88e6c38308d92066d2c122d3e/e134c79da8b817d9-61/s1280x1920/fef1da728dc05585f82748b578e27b6dbe841fcb.png>
+<img target="_blank" src="https://64.media.tumblr.com/5ab5dfb88e6c38308d92066d2c122d3e/e134c79da8b817d9-61/s1280x1920/fef1da728dc05585f82748b578e27b6dbe841fcb.png">
 
 6. Handling Categorical Data: performing label encoding on the ordinal data (Total_Stops)
-<img target="_blank" src="https://64.media.tumblr.com/65aa2c3de38ce9e1047887cd0734f2a6/3621f30b68b85d4e-e4/s1280x1920/c23835fbe2fde33d51e25c1dbe97a395f3d7c29b.png>
+<img target="_blank" src="https://64.media.tumblr.com/65aa2c3de38ce9e1047887cd0734f2a6/3621f30b68b85d4e-e4/s1280x1920/c23835fbe2fde33d51e25c1dbe97a395f3d7c29b.png">
                           
 ## Deployement on Heroku
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
