@@ -22,8 +22,8 @@ pip install -r requirements.txt
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
 
 
-[<img target="_blank" src="https://arunmozhidevan.tumblr.com/post/639190187961876480/heroku-deployment-1">]
-[![](https://arunmozhidevan.tumblr.com/post/639190255128412160/heroku-deployment-2)]
+
+[![](https://64.media.tumblr.com/029bdfc5d6ab73e7cb4c51998659426b/3a090db3c9309298-99/s1280x1920/35b30c80e25da93e4ce32e61e8e469b7d91952a0.png)]
 [![](https://arunmozhidevan.tumblr.com/post/639190323510362112)]
 [![](https://arunmozhidevan.tumblr.com/post/639190384298377216)]
 [![](https://arunmozhidevan.tumblr.com/post/639190442093789184/heroku-deployment)]
