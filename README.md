@@ -17,7 +17,29 @@ To install the required packages and libraries, run this command in the project 
 ```bash
 pip install -r requirements.txt
 ```
+## Coding on Jupyter Notebook
+1. After importing the necessary libraries, load the excel sheet using pandas read_excel
+<img target="_blank" src="https://64.media.tumblr.com/cbffa66fec5375457ff0f5407b503f3b/494bc3862fd97b16-69/s1280x1920/78f12d4de2a2bebe03dcde4d67bd1d01f4e4e438.png">
 
+2. Data cleaning: Since we have only a few NaN data, we are going to drop the NaN rows
+<img target="_blank" src="https://64.media.tumblr.com/05f2274f5da35ccc3340dc2d7a1111ad/e134c79da8b817d9-b3/s1280x1920/bd08a5e0e23fc4478f93d9b8cd0186b8a5e4c59d.png">
+
+
+3. Feature extraction: get the unique value of Airline, Source, Destination, Total_Stops of the catecorical data which will be doing one hot encoding and label encoding
+<img target="_blank" src="https://64.media.tumblr.com/a1a2fa3f732cffeaccfa17d9d4fcb5eb/494bc3862fd97b16-aa/s1280x1920/2f52f00b5500ea729e63f8381d02bf0c40b9fd75.png">
+
+4. Feature extraction: extracting day and month from the time stamp for arrival_time and dep_time
+<img target="_blank" src="https://64.media.tumblr.com/b2bc203943b82b1ef9da2223548a7439/3621f30b68b85d4e-cd/s1280x1920/159aec8ed666c14db120e6dbd5ebd1f704dfc2ad.png">
+
+5. Feature extraction: calculating duration from arrival_time and dep_time
+<img target="_blank" src="https://64.media.tumblr.com/e72708d7e537fb1839691174c16a21a7/e134c79da8b817d9-ce/s1280x1920/4f7101283fd1507eefe55446e069e17c90696a1c.png>
+
+5. Handling Categorical Data: performing one hot encoding on the nominal data (Airline, Source, Destination)
+<img target="_blank" src="https://64.media.tumblr.com/5ab5dfb88e6c38308d92066d2c122d3e/e134c79da8b817d9-61/s1280x1920/fef1da728dc05585f82748b578e27b6dbe841fcb.png>
+
+6. Handling Categorical Data: performing label encoding on the ordinal data (Total_Stops)
+<img target="_blank" src="https://64.media.tumblr.com/65aa2c3de38ce9e1047887cd0734f2a6/3621f30b68b85d4e-e4/s1280x1920/c23835fbe2fde33d51e25c1dbe97a395f3d7c29b.png>
+                          
 ## Deployement on Heroku
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
 
