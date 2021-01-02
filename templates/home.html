@@ -2,6 +2,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Flight fare prediction</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<style type ="text/css" >
    .footer{
        position: fixed;
@@ -15,77 +20,120 @@
 	<body>
 	
 		<center>
-		<h1> Welcome to flight fare Prediction website</h1>
+		<h1 > Welcome to flight fare Prediction website</h1>
 		<br>
+		<br>
+		<div>
+		<form action="/predict" method="POST" class="form-horizontal">
+		<div class="form-group">
+		
+				
+			<div class="form-group row">	
+				<label class="col-sm-2 control-label" for="dep_time">Choose a Depature time:</label>
+				<div class="col-sm-3">
+				<input class="form-control" type="datetime-local" name="dep_time" id="dep_time" required="required">
+				</div>
+				
+				<label class="col-sm-2 control-label" for="arrival_time">Choose an Arrival Time:</label>
+				<div class="col-sm-3">
+				<input class="form-control" type="datetime-local" name="arrival_time" id="arrival_time" required="required">
+				</div>
+			</div>
 			<br>
-		<form action="/predict" method="POST">
-			<label for="dep_time">Choose a Depature time:</label>
-			<input type="datetime-local" name="dep_time" id="dep_time" required="required">
 			<br>
-			<br>
-			<label for="arrival_time">Choose an Arrival Time:</label>
-			<input type="datetime-local" name="arrival_time" id="arrival_time" required="required">
-			<br>
-			<br>
-			<label for="Total_Stops">Choose no. of Stop:</label>
-				<select name="Total_Stops" id="Total_Stops" required="required">
-					<option value="0">Non-stop</option>
-					<option value="1">1 stop </option>
-					<option value="2">2 stop</option>
-					<option value="3">3 stop</option>
-					<option value="4">4 stop</option>
-				</select>
-				<br>
-				<br>
-			<label for="airline">Choose a Airline:</label>
-			  <select name="airline" id="airline" required="required">
-					<option value="Air Asia">Air Asia</option>
-					<option value="Air_India">Air India</option>
-					<option value="GoAir">GoAir</option>
-					<option value="IndiGo">IndiGo</option>
-					<option value="Jet_Airways">Jet Airways</option>
-					<option value="Jet_Airways_Business">Jet Airways Business</option>
-					<option value="Multiple_carriers">Multiple carriers</option>
-					<option value="Multiple_carriers_Premium_economy">Multiple carriers Premium economy</option>
-					<option value="SpiceJet">SpiceJet</option>
-					<option value="Trujet">Trujet</option>
-					<option value="Vistara">Vistara</option>
-					<option value="Vistara_Premium_economy">Vistara Premium economy</option> 			
-			  </select>
+			<div class="form-group row">
+				<label class="col-sm-2 control-label" for="Total_Stops">Choose no. of Stop:</label>
+				<div class="col-sm-3">
+					<select class="form-control" aria-label="Default select example" name="Total_Stops" id="Total_Stops" required="required">
+						<option value="0">Non-stop</option>
+						<option value="1">1 stop </option>
+						<option value="2">2 stop</option>
+						<option value="3">3 stop</option>
+						<option value="4">4 stop</option>
+					</select>
+					</div>
+					
+				<label class="col-sm-2 control-label" for="airline">Choose a Airline:</label>
+				<div class="col-sm-3">
+				  <select class="form-control" aria-label="Default select example" name="airline" id="airline" required="required">
+						<option value="Air Asia">Air Asia</option>
+						<option value="Air_India">Air India</option>
+						<option value="GoAir">GoAir</option>
+						<option value="IndiGo">IndiGo</option>
+						<option value="Jet_Airways">Jet Airways</option>
+						<option value="Jet_Airways_Business">Jet Airways Business</option>
+						<option value="Multiple_carriers">Multiple carriers</option>
+						<option value="Multiple_carriers_Premium_economy">Multiple carriers Premium economy</option>
+						<option value="SpiceJet">SpiceJet</option>
+						<option value="Trujet">Trujet</option>
+						<option value="Vistara">Vistara</option>
+						<option value="Vistara_Premium_economy">Vistara Premium economy</option> 			
+				  </select>
+				  </div>
+			</div>
 			  <br>
 			  <br>
-			 <label for="Source">Choose a Source:</label>
-				<select name="Source" id="Source" required="required">				
-					<option value="Banglore">Banglore</option>
-					<option value="Chennai">Chennai</option>
-					<option value="Delhi">Delhi</option>
-					<option value="Kolkata">Kolkata</option>
-					<option value="Mumbai">Mumbai</option>
-			  </select>
-			  <br>
-			  <br>
-			 <label for="Destination">Choose a Destination:</label>
-				<select name="Destination" id="Destination" required="required">
-					<option value="Banglore">Banglore</option>
-					<option value="Cochin">Cochin</option>
-					<option value="Delhi">Delhi</option>
-					<option value="Hyderabad">Hyderabad</option>
-					<option value="Kolkata">Kolkata</option>
-				</select>
+
+			<div class="form-group row">
+				 <label class="col-sm-2 control-label" for="Source">Choose a Source:</label>
+				 <div class="col-sm-3">
+					<select class="form-control" aria-label="Default select example" name="Source" id="Source" required="required">				
+						<option value="Banglore">Banglore</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Delhi">Delhi</option>
+						<option value="Kolkata">Kolkata</option>
+						<option value="Mumbai">Mumbai</option>
+				  </select>
+				  </div>
+				
+				 <label class="col-sm-2 control-label" for="Destination">Choose a Destination:</label>
+					 <div class="col-sm-3">
+						<select class="form-control" aria-label="Default select example" name="Destination" id="Destination" required="required">
+							<option value="Banglore">Banglore</option>
+							<option value="Cochin">Cochin</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Hyderabad">Hyderabad</option>
+							<option value="Kolkata">Kolkata</option>
+						</select>
+					</div>
+			</div>
+				
+				
 				<br>
 				<br>
-			<input type="submit" value="Search">
+			<input class="btn btn-primary" type="submit" value="Search">
 			<br>
 				<br>
+		</div>
 		</form>
+		</div>
 		<br>
         <br>
         <h3>{{ prediction_text  }}</h3>
-
-
+		<br>
+        <br>
+		<br>
+        <br>
+		<center><div style="max-width: 650px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="/static/profileimage.jpg" class="card-img">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Arun Mozhi Devan</h5>
+            <p class="card-text">I'm working in TCS as a CPQ developer and also Data Science enthusiast who loves to play with machine learning and Deep learning.</p>
+            <p>Click the link below to know about me!</p>
+            <a href="https://www.linkedin.com/in/arun-mozhi-devan-50a91088/" class="btn btn-primary" target="_blank">Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </center>
+	
         <br>
         <br>
-		<div class="footer">© Copyright 2021, created by Arun Mozhi Devan with ❤️ and tears😂</div>
+		<div class="footer">© Copyright 2021, created by Arun Mozhi Devan with love ❤️ and tears 😂</div>
 		</center>
 	</body>
 </html>
