@@ -39,7 +39,27 @@ pip install -r requirements.txt
 
 6. Handling Categorical Data: performing label encoding on the ordinal data (Total_Stops)
 <img target="_blank" src="https://64.media.tumblr.com/65aa2c3de38ce9e1047887cd0734f2a6/3621f30b68b85d4e-e4/s1280x1920/c23835fbe2fde33d51e25c1dbe97a395f3d7c29b.png">
-                          
+
+7. Feature selection: assigning indiviual and target variables for trainging
+<img target="_blank" src="https://64.media.tumblr.com/57c247e4204e6a380a8d72126ccff0a5/3621f30b68b85d4e-c9/s1280x1920/c27e1592389a8595297f840d58604ef7cab24ac1.png">
+
+8. Feature selection: finding the feature importance using ExtraTreesRegressor from sklearn
+<img target="_blank" src="https://64.media.tumblr.com/3bf77f3a84d459e46d7ebd38340f9108/3621f30b68b85d4e-a9/s1280x1920/2088a0bb748a0fa239fb2029f55a9ab03fba2249.png">
+
+9. Performing train test split
+<img target="_blank" src="https://64.media.tumblr.com/fa9df9531b34fce274a6caafd3243a92/d0b9c2df5dd2d39c-dc/s1280x1920/18d448fdeda1bcdd94bc5dcf409a0ae1c3429e23.png">
+
+10 Importing Randomized Search CV from sklearn and fitting the model
+<img target="_blank" src="https://64.media.tumblr.com/81ce6365ac82b2a62cc57fd85a232d4e/d0b9c2df5dd2d39c-c5/s1280x1920/a31016ed66b98124ff716fe9ee6ff39628f6b846.png">
+
+<img target="_blank" src="https://64.media.tumblr.com/5da96056f1f5e36b5a0a582471520555/3621f30b68b85d4e-f8/s1280x1920/1ec6ec21cdba1cab715b03851fd835abba73af6e.png">
+
+11. Calculating MAE MSE RMSE 
+<img target="_blank" src="https://64.media.tumblr.com/39f39c26de15129dc1523672027d802f/3621f30b68b85d4e-cc/s1280x1920/189c226f1d15d9e1a62933da17be2c972c6c7753.png">
+
+12. Saving the trained model as pickel
+<img target="_blank" src="https://64.media.tumblr.com/7b08b37f9d09afb8a55ede4ed93d6516/3621f30b68b85d4e-fb/s1280x1920/f02e06f1f5dc4c9c665dd83f63490be921aaf6dd.png">
+
 ## Deployement on Heroku
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
 
